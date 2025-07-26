@@ -57,7 +57,7 @@
 
     $size = 30000;
     $memory = array_fill(0, $size, 0);
-    $brain = $_POST['brain'];
+    $brain = isset($_POST['brain']) ? $_POST['brain'] : '';
     echo "Brain: $brain <br>";
     $loops = array();
     $current = 0;
